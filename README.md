@@ -28,5 +28,14 @@ A Java command-line interface (CLI) banking platform demonstrating core Object-O
 
 **1. Compile the Source Code**
 Open your terminal at the root of the project and run:
-```bash
-javac -d bin src/com/bank/model/*.java src/com/bank/exception/*.java src/com/bank/service/*.java src/com/bank/Main.java
+`javac -d bin src/com/bank/model/*.java src/com/bank/exception/*.java src/com/bank/service/*.java src/com/bank/Main.java`
+
+**2. Run the Application**
+Execute the compiled program from the root directory:
+`java -cp bin com.bank.Main`
+
+## Instructions for Testing
+1. **Launch the Application:** Run the application using the execution command above.
+2. **Test Valid Transactions:** Select option `2` to deposit funds, then option `1` to verify the accurately updated balance in memory.
+3. **Test Boundary Conditions:** Select option `3` and attempt to withdraw an amount greater than the current balance or below the minimum limit. Verify that the system successfully catches the custom exception and returns to the main menu instead of terminating.
+4. **Verify Ledger Persistence:** Exit the application (Option `4`). Open the auto-generated `audit_log.txt` file in your root directory to confirm all successful and failed transactions were permanently recorded with standard ISO timestamps.
