@@ -28,7 +28,7 @@ A Java command-line interface (CLI) banking platform demonstrating core Object-O
 
 **1. Compile the Source Code**
 Open your terminal at the root of the project and run:
-`javac -d bin src/com/bank/model/*.java src/com/bank/exception/*.java src/com/bank/service/*.java src/com/bank/Main.java`
+`/njavac -d bin src/com/bank/model/*.java src/com/bank/exception/*.java src/com/bank/service/*.java src/com/bank/Main.java`
 
 **2. Run the Application**
 Execute the compiled program from the root directory:
