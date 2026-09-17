@@ -28,12 +28,15 @@ A Java command-line interface (CLI) banking platform demonstrating core Object-O
 
 **1. Compile the Source Code**
 Open your terminal at the root of the project and run:
+'''bash
 `javac -d bin src/com/bank/model/*.java src/com/bank/exception/*.java src/com/bank/service/*.java src/com/bank/Main.java`
+'''
 
 **2. Run the Application**
 Execute the compiled program from the root directory:
+'''bash
 `java -cp bin com.bank.Main`
-
+'''
 ## Instructions for Testing
 1. **Launch the Application:** Run the application using the execution command above.
 2. **Test Valid Transactions:** Select option `2` to deposit funds, then option `1` to verify the accurately updated balance in memory.
